@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C2A4E1E20242DC600BCB2A4 /* ProtocolDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A4E1D20242DC600BCB2A4 /* ProtocolDescriptionViewController.swift */; };
 		8C7A24781F6CAE780061F69C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7A24771F6CAE780061F69C /* AppDelegate.swift */; };
-		8C7A247A1F6CAE780061F69C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7A24791F6CAE780061F69C /* ViewController.swift */; };
 		8C7A247D1F6CAE780061F69C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C7A247B1F6CAE780061F69C /* Main.storyboard */; };
 		8C7A247F1F6CAE780061F69C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C7A247E1F6CAE780061F69C /* Assets.xcassets */; };
 		8C7A24821F6CAE780061F69C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C7A24801F6CAE780061F69C /* LaunchScreen.storyboard */; };
+		8C7A248A1F6CED1F0061F69C /* ProtocolTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7A24891F6CED1F0061F69C /* ProtocolTableViewController.swift */; };
+		8C7A248E1F6D180B0061F69C /* MedTraumaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7A248D1F6D180B0061F69C /* MedTraumaTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C2A4E1D20242DC600BCB2A4 /* ProtocolDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolDescriptionViewController.swift; sourceTree = "<group>"; };
 		8C7A24741F6CAE780061F69C /* NFD Protocols.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NFD Protocols.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C7A24771F6CAE780061F69C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8C7A24791F6CAE780061F69C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8C7A247C1F6CAE780061F69C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C7A247E1F6CAE780061F69C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C7A24811F6CAE780061F69C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C7A24831F6CAE780061F69C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C7A24891F6CED1F0061F69C /* ProtocolTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolTableViewController.swift; sourceTree = "<group>"; };
+		8C7A248D1F6D180B0061F69C /* MedTraumaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedTraumaTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				8C7A24771F6CAE780061F69C /* AppDelegate.swift */,
-				8C7A24791F6CAE780061F69C /* ViewController.swift */,
+				8C7A24891F6CED1F0061F69C /* ProtocolTableViewController.swift */,
+				8C7A248D1F6D180B0061F69C /* MedTraumaTableViewController.swift */,
+				8C2A4E1D20242DC600BCB2A4 /* ProtocolDescriptionViewController.swift */,
 				8C7A247B1F6CAE780061F69C /* Main.storyboard */,
 				8C7A247E1F6CAE780061F69C /* Assets.xcassets */,
 				8C7A24801F6CAE780061F69C /* LaunchScreen.storyboard */,
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C7A247A1F6CAE780061F69C /* ViewController.swift in Sources */,
 				8C7A24781F6CAE780061F69C /* AppDelegate.swift in Sources */,
+				8C7A248E1F6D180B0061F69C /* MedTraumaTableViewController.swift in Sources */,
+				8C7A248A1F6CED1F0061F69C /* ProtocolTableViewController.swift in Sources */,
+				8C2A4E1E20242DC600BCB2A4 /* ProtocolDescriptionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
