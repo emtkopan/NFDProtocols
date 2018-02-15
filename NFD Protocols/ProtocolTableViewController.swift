@@ -37,9 +37,5 @@ class ProtocolTableViewController: UITableViewController {
 		
 		performSegue(withIdentifier: "mySegue", sender: protocol1)
 	}
-	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		//let protocolVC = segue.destination as! MedTraumaTableViewController
-		//protocolVC.protocol1 = [sender as! String]
-		
-	}
+	
 }

@@ -10,7 +10,7 @@ import UIKit
 
 class MedTraumaTableViewController: UITableViewController {
 	
-	var protocol1 = ["Atrial Fibrillation with RVR","Bradycardia/Blocks","Cardiac Arrest AED","Cardiac Arrest Asystole/PEA","Chest Pain/ACS","ICD Deactivation","LVAD","PVC's with Chest Pain","PSVT","Stemi Alert","Tor Medical","V-Fib/Pulseless V-Tach","Wide Complex Tachycardia"]
+	var protocol1 = ["Atrial Fibrillation with Rapid Ventricular Response","Bradycardia/AV Blocks","Cardiac Arrest/AED","Cardiac Arrest - Asystole & EMD/PEA","Chest Pain or Presumed Acute Coronary Syndrome","Implantable Cardioverter Defibrillator (ICD) Deactivation","LVAD Transports","Premature Ventricular Contractions (PVCs) in Patients with Chest Pain","Presumed PSVT","Stemi Alert","Termination of Resuscitaiton (TOR)","Ventricular Fibrillation or Pulseless Ventricular Tachycardia","Wide Complex Tachycardia Presumed Ventricular Tachycardia", "Allergic Reaction/Anaphylaxis", "Altered Mental Status (AMS)", "Asthma", "Congestive Heart Failure/Pulmonary Edema", "COPD, Emphysema, Bronchitis", "Agitated, Uncontrollable Patient or Patient with Presumed Excited Delirium or Psychosis", "Field Determination of Death", "Hypertensive Crisis", "Hyperthermia/Heat Stroke", "Hypoglycemia", "Hypothermia", "Nausea and Vomiting", "Nerve Agent Exposure, Symptomatic", "Overdose, Poisoning, Toxin Exposure", "Respiratory Distress", "Seizures", "Sepsis", "Shock", ]
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -79,38 +79,67 @@
             <objects>
                 <viewController id="MD8-PB-HK3" customClass="ProtocolDescriptionViewController" customModule="NFD_Protocols" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0qf-jI-IWW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Protocol Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pn1-1N-0TQ">
-                                <rect key="frame" x="15" y="250" width="345" height="478"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Protocol Titile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eit-aT-Gif">
-                                <rect key="frame" x="15" y="184" width="345" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protocol Titile" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eit-aT-Gif">
+                                <rect key="frame" x="15" y="98" width="345" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="O7j-Hk-veF"/>
+                                    <constraint firstAttribute="height" constant="22" id="Rm1-n2-c9i"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ouP-Av-z7o">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="98"/>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="17P-ms-ooR">
+                                <rect key="frame" x="0.0" y="120" width="375" height="846"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Protocol Description" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8V8-hb-JXv">
+                                        <rect key="frame" x="0.0" y="30" width="375" height="1000"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1000" id="By0-cQ-KWb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="8V8-hb-JXv" firstAttribute="top" secondItem="17P-ms-ooR" secondAttribute="top" constant="30" id="4UR-YM-MJ7"/>
+                                    <constraint firstItem="8V8-hb-JXv" firstAttribute="centerX" secondItem="17P-ms-ooR" secondAttribute="centerX" id="Gpx-fW-Noh"/>
+                                    <constraint firstItem="8V8-hb-JXv" firstAttribute="leading" secondItem="17P-ms-ooR" secondAttribute="leading" id="cYg-Dy-Ugf"/>
+                                    <constraint firstAttribute="bottom" secondItem="8V8-hb-JXv" secondAttribute="bottom" id="gXR-9t-KXc"/>
+                                    <constraint firstAttribute="trailing" secondItem="8V8-hb-JXv" secondAttribute="trailing" id="zfb-fQ-i9Y"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="eit-aT-Gif" firstAttribute="top" secondItem="JpN-qE-xrC" secondAttribute="top" constant="100" id="4Bn-57-zwq"/>
-                            <constraint firstItem="JpN-qE-xrC" firstAttribute="trailing" secondItem="eit-aT-Gif" secondAttribute="trailing" constant="15" id="D23-j0-G11"/>
-                            <constraint firstItem="JpN-qE-xrC" firstAttribute="trailing" secondItem="pn1-1N-0TQ" secondAttribute="trailing" constant="15" id="FbS-O7-qLW"/>
-                            <constraint firstItem="pn1-1N-0TQ" firstAttribute="leading" secondItem="JpN-qE-xrC" secondAttribute="leading" constant="15" id="L6b-wl-3bx"/>
-                            <constraint firstItem="pn1-1N-0TQ" firstAttribute="top" secondItem="eit-aT-Gif" secondAttribute="bottom" constant="30" id="PBz-29-e25"/>
-                            <constraint firstItem="eit-aT-Gif" firstAttribute="leading" secondItem="JpN-qE-xrC" secondAttribute="leading" constant="15" id="YAP-DG-S5A"/>
-                            <constraint firstItem="eit-aT-Gif" firstAttribute="leading" secondItem="JpN-qE-xrC" secondAttribute="leading" constant="15" id="n3i-Hi-6mT"/>
-                            <constraint firstItem="JpN-qE-xrC" firstAttribute="trailing" secondItem="eit-aT-Gif" secondAttribute="trailing" constant="15" id="ony-dg-fdI"/>
-                            <constraint firstItem="JpN-qE-xrC" firstAttribute="bottom" secondItem="pn1-1N-0TQ" secondAttribute="bottom" constant="30" id="qUE-gU-FaA"/>
+                            <constraint firstItem="ouP-Av-z7o" firstAttribute="top" secondItem="0qf-jI-IWW" secondAttribute="top" id="2Dz-Wn-vKy"/>
+                            <constraint firstAttribute="trailing" secondItem="ouP-Av-z7o" secondAttribute="trailing" id="2qe-42-NhY"/>
+                            <constraint firstItem="17P-ms-ooR" firstAttribute="leading" secondItem="JpN-qE-xrC" secondAttribute="leading" id="3G3-Yf-mNM"/>
+                            <constraint firstItem="17P-ms-ooR" firstAttribute="top" secondItem="eit-aT-Gif" secondAttribute="bottom" id="BWY-h9-OcM"/>
+                            <constraint firstItem="eit-aT-Gif" firstAttribute="top" secondItem="JpN-qE-xrC" secondAttribute="top" constant="10" id="NBN-y7-mie"/>
+                            <constraint firstItem="ouP-Av-z7o" firstAttribute="centerX" secondItem="0qf-jI-IWW" secondAttribute="centerX" id="Ndj-ig-GMi"/>
+                            <constraint firstItem="JpN-qE-xrC" firstAttribute="trailing" secondItem="17P-ms-ooR" secondAttribute="trailing" id="OWl-my-D2M"/>
+                            <constraint firstItem="JpN-qE-xrC" firstAttribute="bottom" secondItem="17P-ms-ooR" secondAttribute="bottom" id="Vu6-SE-5Is"/>
+                            <constraint firstItem="eit-aT-Gif" firstAttribute="top" secondItem="ouP-Av-z7o" secondAttribute="bottom" id="hHb-9e-ZUz"/>
+                            <constraint firstItem="ouP-Av-z7o" firstAttribute="leading" secondItem="0qf-jI-IWW" secondAttribute="leading" id="jna-8d-lpo"/>
+                            <constraint firstItem="JpN-qE-xrC" firstAttribute="trailing" secondItem="eit-aT-Gif" secondAttribute="trailing" constant="15" id="mig-LM-2HR"/>
+                            <constraint firstItem="eit-aT-Gif" firstAttribute="leading" secondItem="JpN-qE-xrC" secondAttribute="leading" constant="15" id="nbT-gp-mrt"/>
+                            <constraint firstItem="8V8-hb-JXv" firstAttribute="height" secondItem="0qf-jI-IWW" secondAttribute="height" id="wLM-Vn-TTl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JpN-qE-xrC"/>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="1000"/>
                     <connections>
-                        <outlet property="protocolDescription" destination="pn1-1N-0TQ" id="wdS-cg-Qed"/>
+                        <outlet property="protocolDescription" destination="8V8-hb-JXv" id="RDK-DT-JmC"/>
                         <outlet property="protocolTitle" destination="eit-aT-Gif" id="0Zm-qO-TfJ"/>
                     </connections>
                 </viewController>
