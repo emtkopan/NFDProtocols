@@ -21,7 +21,7 @@ class ProtocolDescriptionViewController: UIViewController {
         super.viewDidLoad()
 		
 		protocolTitle.text = proto
-		/* ["Atrial Fibrillation with Rapid Ventricular Response","Bradycardia/AV Blocks","Cardiac Arrest/AED","Cardiac Arrest - Asystole & EMD/PEA","Chest Pain or Presumed Acute Coronary Syndrome","Implantable Cardioverter Defibrillator (ICD) Deactivation","LVAD Transports","Premature Ventricular Contractions (PVCs) in Patients with Chest Pain","Presumed PSVT","Stemi Alert","Termination of Resuscitaiton (TOR)","Ventricular Fibrillation or Pulseless Ventricular Tachycardia","Wide Complex Tachycardia Presumed Ventricular Tachycardia", "Allergic Reaction/Anaphylaxis", "Altered Mental Status", "Asthma", "Congestive Heart Failure/Pulmonary Edema", "COPD, Emphysema, Bronchitis", "Agitated, Uncontrollable Patient or Patient with Presumed Excited Delirium or Psychosis", "Field Determination of Death", "Hypertensive Crisis", "Hyperthermia/Heat Stroke", "Hypoglycemia", "Hypothermia", "Nausea and Vomiting", "Nerve Agent Exposure, Symptomatic", "Overdose, Poisoning, Toxin Exposure", "Respiratory Distress", "Seizures", "Sepsis", "Shock", ]
+		/* ["Atrial Fibrillation with Rapid Ventricular Response","Bradycardia/AV Blocks","Cardiac Arrest/AED","Cardiac Arrest - Asystole & EMD/PEA","Chest Pain or Presumed Acute Coronary Syndrome","Implantable Cardioverter Defibrillator (ICD) Deactivation","LVAD Transports","Premature Ventricular Contractions (PVCs) in Patients with Chest Pain","Presumed PSVT","Stemi Alert","Termination of Resuscitaiton (TOR)","Ventricular Fibrillation or Pulseless Ventricular Tachycardia","Wide Complex Tachycardia Presumed Ventricular Tachycardia", "Allergic Reaction/Anaphylaxis", "Altered Mental Status", "Asthma", "Congestive Heart Failure/Pulmonary Edema", "COPD, Emphysema, Bronchitis", "Agitated, Uncontrollable Patient or Patient with Presumed Excited Delirium or Psychosis", "Field Determination of Death", "Hypertensive Crisis", "Hyperthermia/Heat Stroke", "Hypoglycemia", "Hypothermia", "Nausea and Vomiting", "Nerve Agent Exposure, Symptomatic", "Overdose, Poisoning, Toxin Exposure", "Respiratory Distress", "Seizures", "Sepsis", "Shock", "Stroke", "Trauma Patients Who Are Agitated, Combatitive, And/Or Uncontrollable", "Burns", "Cervical Spine Clearance", "Cyanide Exposure", "Drowning/Near Drowning", "Adult Pain Mangement - Post Trauma", "Spinal Motion Restriction", "Snake Bite", "Trauma Alert Criteria", "Trauma Arrest & Termination of Resuscitation (TOR)", "Uncontrollable Hemorrhage (Extremity)", "Apgar Scoring", "Eclampsia", "Obstetrical/Gynecological Emergencies", "Cardiac Arrest with Pregnancy", "OB Delivery Complications", "Pre-Eclampsia","General Rules for Pediatric Patients", ]
 */
 		
 		if  proto == "Atrial Fibrillation with Rapid Ventricular Response" {
@@ -729,6 +729,498 @@ Systolic BP < 90mmHg AND signs of hypoperfusion (hemorrhagic, hypovolemic, neuro
 -> Determine serum glucose
 -> Two large bore IVs NS WIDE OPEN, until peripheral pulses maintained
 -> Place on EKG monitor
+
+"""
+		}
+		if proto == "Stroke" {
+			protocolDescription.text = """
+-> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
+-> Determine serum glucose
+-> Elevate the head of cot 30o
+-> Assess mental status and perform F-A-S-T stroke examination:
+	-> F - Facial symmetry/asymmetry while asking patient to show all of his/her teeth
+	-> A - Arm drift, patient’s ability to keep both arms held outward with eyes closed
+	-> S - Speech, patient’s ability to repeat “You can’t teach an old dog new tricks”
+	-> T - Time of onset of symptoms or last seen normal
+-> Initiate Stroke Alert if symptoms and assessment are suggestive of Stroke
+-> IV NS KVO
+-> Place on EKG monitor
+-> Transport emergency if < 8 hours since symptoms began
+
+* Do not lower BP in a hypertensive stroke patient unless MEDICAL CONTROL agrees *
+-> If systolic BP exceeds 220 and/or diastolic BP exceeds 140, CONTACT MEDICAL CONTROL for further direction or orders (that might include giving NTG)
+			
+"""
+		}
+		if proto == "Syncope/Near Syncope" {
+			protocolDescription.text = """
+-> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
+-> Determine serum glucose
+-> Acquire and transmit 12 lead EKG
+	-> Initiate STEMI Alert if indicated (Refer to STEMI Alert protocol)
+-> Perform a focused neurologic examination (FAST exam)
+	-> Initiate Stroke Alert if indicated (Refer to Stroke protocol)
+
+"""
+		}
+		if proto == "Trauma Patients Who Are Agitated, Combatitive, And/Or Uncontrollable" {
+			protocolDescription.text = """
+This protocol is to be used in conjunction with the Nashville Fire Department’s Operational Procedure and Guideline on the use of patient restraint. Notify an EMS Chief as soon as possible whenever you en- counter a patient who may require this protocol.
+
+-> Administer oxygen by best available means, hypoxia may be the cause of combativeness
+-> Apply EKG monitor and pulse oximeter
+-> IV NS 500 ml unless signs/symptoms of CHF
+-> Determine serum glucose
+-> Cool hyperthermic patients with cool water, ice packs, or by removing layers of clothing
+-> Maintain appropriate C-spine precautions
+-> Perform trauma and neurological assessment including pupil size as this neurological assessment will likely change after Versed administration
+-> Versed 5 mg IM or Versed 2 mg IV
+-> May repeat Versed 5 mg IM or Versed 2 mg IV in 5 minutes if patient cannot be safely transported
+-> Resume placement of pulse oximeter, EKG monitor, IV access, and glucose determination if not previously successful.
+-> Reevaluate for signs of trauma and neurologic impairment, including pupil size and vital signs
+-> CONTACT LEVEL I TRAUMA CENTER and report the following:
+	a) Patient’s age and sex
+	b) Brief history of events
+	c) Initial assessment including obvious injuries
+	d) Best neurologic assessment
+	e) Vital Signs
+	f) ETA
+
+"""
+		}
+		if proto == "Burns" {
+			protocolDescription.text = """
+-> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
+-> Remove jewelry from the affected area
+-> Cover burned area with a sterile dressing or burn sheet
+-> Soak dressing with NS
+	-> Do not wet large burns; avoid hypothermia
+-> Place on EKG monitor
+			
+For moderate to severe pain unrelieved by moist dressing:
+-> Fentanyl 50-100 mcg IV, IN, or IM. Titrate to pain relief
+-> Before using pain meds in patients with smoke inhalation, facial burns, airway burns, head injury or multisystem trauma, CONTACT MEDICAL CONTROL for approval
+-> For additional Fentanyl, CONTACT MEDICAL CONTROL
+-> IV NS KVO; if hypotensive, wide open. Avoid burned area
+			
+Burn percentages:
+	HEAD = 9%
+	TORSO FRONT = 18%
+	TORSO BACK = 18%
+	ARMS = 9% EACH
+	GROIN = 1%
+	LEGS = 18% EACH
+			
+"""
+		}
+		if proto == "Cervical Spine Clearance" {
+			protocolDescription.text = """
+This protocol shall only apply to patients that are alert and have the capacity to make informed decisions.
+			
+The following criteria, as assessed by a paramedic, must be satisfied in order to forgo immobilization.
+-> Low energy mechanism of injury (low speed MVA under 25 mph, falls from standing or sitting)
+-> No neurological complaints of weakness, paresthesia, paralysis, or loss of consciousness
+-> No distracting injuries (small lacerations are ok)
+-> Not under influence of alcohol or drugs
+-> No spine tenderness on palpation and no complaints of neck or back pain
+			
+If spinal immobilization is not initiated, the medical record must reflect assessment of the points listed
+			above.
+
+"""
+		}
+		if proto == "Chest Trauma" {
+			protocolDescription.text = """
+-> Provide oxygen via nasal cannula, non-rebreather, or BVM to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
+-> Immobilize patient if suspected spinal injury (Refer to Spinal Motion Restriction protocol)
+-> Initiate Trauma Alert if indicated. (Refer to Trauma Alert protocol)
+-> Two large bore IVs NS WIDE OPEN, until peripheral pulses maintained
+-> Place on EKG monitor
+-> If flail chest, apply trauma pad or bulky dressing over segment to stabilize
+-> If open pneumothorax (sucking chest wound), apply occlusive dressing and secure on three sides
+-> If tension pneumothorax and patient is in extremis, perform a needle decompression
+			
+* Needle decompression should be performed at the 2nd intercostal space at midclavicular line. *
+
+"""
+		}
+		if proto == "Cyanide Exposure" {
+			protocolDescription.text = """
+-> Provide oxygen via nasal cannula, non-rebreather, BVM, KING, or ETT, to maintain oxygen saturation of 100%
+-> Determine serum glucose
+-> Determine CO and SpO2
+-> Place on EKG monitor
+-> IV NS
+			
+Only indicated in patients that have sustained exposure to fire or smoke in an enclosed area and have an altered mental status, unconscious, or in cardiac arrest.
+-> Administer CYANOKIT (hydroxocobalamin 5 gm)***
+	-> Requires separate IV, do not administer medications simultaneously with Cyanokit
+	-> Reconstitute with Normal Saline 200 ml, using transfer spike
+	-> Mix by rotating and rocking vial for 60 seconds; do not shake
+	-> Infuse over 15 minutes using supplied tubing
+			
+* Due to its dark red color, hydroxocobalamin changes the pigmentation of the blood and may prevent accurate CO and SpO2 monitoring. *
+
+*** See Pediatric Cyanide Exposure protocol for specific pediatric dosing. Pediatric Dose = 70 mg/kg ***
+			
+"""
+		}
+		if proto == "Drowning/Near Drowning" {
+			protocolDescription.text = """
+-> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
+-> Immobilize patient if suspected spinal injury (Refer to Spinal Motion Restriction protocol)
+-> Place on EKG monitor
+-> Determine serum glucose
+-> Dry patient and remove wet clothing
+-> Monitor airway and rhythm for changes
+-> Closely monitor O2 saturation and respiratory rate
+			
+"""
+		}
+		if proto == "Adult Pain Mangement - Post Trauma" {
+			protocolDescription.text = """
+Protocol applies to patients > 16 years old. For pediatric patients refer to Pediatric Trauma protocol or CONTACT MEDICAL CONTROL at Vanderbilt Children’s Hospital.
+			
+-> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
+-> IV NS KVO
+-> Fentanyl 50 mcg IV, IN, or IM
+-> For patients with multi-system trauma, head injury, AMS, hypotension, hypoxia, or airway burns; CONTACT MEDICAL CONTROL to discuss Fentanyl
+-> May repeat Fentanyl 50 mcg IV, IN, or IM one time
+-> If patient complains of nausea, administer Zofran (ondansetron) 4 mg IV, IM
+			
+If respiratory depression occurs:
+-> Narcan (naloxone) 0.5 – 2 mg IV, IM, or IN titrate to desired effect
+
+* This protocol applies only to post-trauma patients. For patients with pain due to a medical cause, CONTACT MEDICAL CONTROL for orders. *
+			
+"""
+		}
+		if proto == "Spinal Motion Restriction" {
+			protocolDescription.text = """
+Applies to patients Age 3 & Up
+			
+If patient has any spinal motion restriction in place prior to arrival, do NOT remove.
+Do not use any spinal motion restriction with penetrating trauma, unless neurologic deficit is present.
+			
+C-Collar Only-Fowler’s or Semi-Fowler’s Position
+-> Low/Minor MOI
+-> No Neurological deficits
+-> Mild cervical spine pain or tenderness
+-> No thoracic or lumbar spinal pain or tenderness
+-> No AMS or intoxication
+			
+C-Collar Only—Supine on Stretcher
+-> Moderate MOI
+-> No distracting injuries
+-> No Neurological deficit
+-> Mid-line spinal pain and/or tenderness
+-> Altered mental status
+			
+Full Spinal Immobilization C-Collar, LSB, Head Blocks
+-> High MOI
+-> Distracting injuries
+-> Neurological deficit
+-> Anatomic deformity of the spine
+-> Unconscious/Unresponsive
+			
+*n All patients that are 65 years old or greater, with or without neck pain, should at a minimum have a C-Collar applied for any fall. *
+			
+If in doubt, use full spinal immobilization.
+			
+"""
+		}
+		if proto == "Snake Bite" {
+			protocolDescription.text = """
+-> Provide oxygen via nasal cannula, non-rebreather, or BVM to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
+-> Remove rings, bracelets, and watch if extremity is affected
+-> Be wary of “dead snake”
+-> Immobilize extremity and attempt to keep below or at the level of the heart
+
+"""
+		}
+		if proto == "Trauma Alert Criteria" {
+			protocolDescription.text = """
+The goal is for the Trauma Center to receive the initial Trauma Alert notification as early as possible prior to the patient’s arrival at the trauma center.
+			
+Airway/Breathing
+-> Unstable airway or already intubated
+-> Severe maxillofacial injury
+-> Facial burns or suspected inhalation injury
+-> Moderate to severe respiratory distress
+-> Subcutaneous emphysema of face, neck, or thorax
+
+Cardiovascular
+-> Systolic BP < 90 mmHg
+-> Trauma arrest
+-> Uncontrolled external bleeding
+
+Neurological
+-> Glasgow Coma Scale < 8
+-> Suspected head injury with loss of consciousness
+-> Actual or potential spinal cord injury with deficits
+			
+Thorax
+-> Abdominal, chest, or pelvic injury with shock
+-> Chest wall injury—sucking chest wound, flail chest
+			
+Extremity
+-> Long bone fractures with shock
+-> Amputation of proximal extremity (not digits)
+-> Pulseless extremity
+			
+Mechanism of injury
+-> Penetrating injury to head, neck, back, thorax, or buttocks
+-> High voltage electrical injury
+-> Massive crush injury
+-> Burns > 20% total body surface area
+			
+If time permits during transport, notify the Trauma Center via Trauma Alert Update any additional assessment findings, response to treatment, and ETA.
+
+"""
+		}
+		if proto == "Trauma Arrest & Termination of Resuscitation (TOR)" {
+			protocolDescription.text = """
+For Adult TRAUMA Cardiac Arrest
+TOR should never be considered in a patient if there are any signs of life, including but not limited to:
+	► respirations
+	► audible vocalizations
+	► pupillary responsiveness
+	► pulse
+	► movement
+
+All patients in trauma arrest requiring transport shall be transported to the nearest trauma center: Skyline Medical Center or Vanderbilt Medical Center
+			
+VENTRICULAR FIBRILLA TION
+* DO NOT TERMINATE RESUSCITATION *
+-> Institute spinal precautions if indicated
+-> Follow Ventricular Fibrillation protocol
+-> If return of spontaneous circulation (ROSC) achieved, acquire and transmit 12 lead EKG
+-> Transport
+			
+ASYSTOLE
+-> Institute spinal precautions if indicated
+-> BLS CPR
+-> Bag valve mask ventilations @ 10 breaths/minute
+-> CONTACT MEDICAL CONTROL to discuss TOR
+			
+EMD/PEA
+-> Institute spinal precautions if indicated
+-> BLS CPR
+-> Bag valve mask ventilations @ 10 breaths/minute
+-> If thoracic trauma, perform needle decompression for unequal breath sounds and/or difficult to ventilate
+PEA > 40 beats/min
+-> DO NOT TERMINATE
+-> Follow EMD/PEA protocol
+-> Transport
+PEA < 40 beats/min
+-> CONTACT MEDICAL CONTROL to discuss TOR
+			
+IF ANY DOUBT, TRANSPORT THE PATIENT TO THE NEAREST APPROPRIATE TRAUMA CENTER
+CONTACT MEDICAL CONTROL to discuss termination of resuscitative efforts during transport if on-scene termination is not prudent due to paramedic discretion, upset family, violent scene, bystanders, or other conditions
+			
+"""
+		}
+		if proto == "Uncontrollable Hemorrhage (Extremity)" {
+			protocolDescription.text = """
+-> Provide oxygen via nasal cannula, non-rebreather, or BVM to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
+-> Immobilize patient if suspected spinal injury (Refer to Spinal Motion Restriction protocol)
+-> Apply direct pressure
+-> If unable to control bleeding quickly, apply CAT tourniquet (above the site of bleeding)
+	-> For upper extremity wounds —apply CAT to proximal upper arm
+	-> For lower extremity wounds—apply CAT to proximal thigh
+	-> Tighten tourniquet until pulses are no longer palpable distal to site and bleeding controlled
+	-> Do not apply directly over a joint
+-> If bleeding still uncontrolled, apply second CAT tourniquet just proximal to the first
+-> Initiate Trauma Alert (Refer to Trauma Alert protocol)
+-> Two large bore IVs NS WIDE OPEN, until peripheral pulses maintained
+-> Place on EKG monitor
+
+"""
+		}
+		if proto == "Apgar Scoring" {
+			protocolDescription.text = """
+-> Assess APGAR scores at 1 and 5 minutes post delivery
+			
+APPEARANCE
+Blue, Pale - 0
+Body pink - 1
+Fully Pink - 2
+			
+PULSE
+Absent - 0
+< 100 - 1
+>100 - 2
+			
+GRIMACE - Irritability Stimulate Feet
+None - 0
+Some motion - 1
+Vigorous cry - 2
+			
+ACTIVITY - Muscle Tone
+Flaccid - 0
+Some flexion - 1
+Active motion - 2
+			
+RESPIRATORY EFFORT
+Absent - 0
+Weak cry - 1
+Strong cry - 2
+
+-> Infants with scores of 7-10 usually require supportive care only
+-> Scores of 4-6 indicate moderate depression and require moderate support
+-> Scores of < 4 require aggressive resuscitation (Refer to Neonatal Resuscitation protocol)
+			
+"""
+		}
+		if proto == "Eclampsia" {
+			protocolDescription.text = """
+Only applicable for pregnant patients who are > 20 weeks gestation or those within 6 weeks postpartum
+
+Patient must have seizure plus one or more of the following:
+	► Systolic BP >160 mmHG
+	► Diastolic BP > 110 mmHG
+			
+-> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%
+-> Determine serum glucose
+-> IV NS KVO
+-> Magnesium Sulfate 5 gm in NS 100 ml IV infused over 15-20 minutes
+-> Versed 5 mg IM or Versed 2 mg IV, if actively seizing
+-> Place on EKG monitor
+-> Transport the patient in the left lateral recumbent position
+			
+If patient continues to experience seizure after initial 5 gm is administered:
+-> CONTACT MEDICAL CONTROL and request additional Magnesium Sulfate 2 gm in NS 100 ml IV infused over 3-5 minutes, and discuss additional Versed administration
+
+"""
+		}
+		if proto == "Obstetrical/Gynecological Emergencies" {
+			protocolDescription.text = """
+-> Provide oxygen via nasal cannula, non-rebreather, or BVM to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
+			
+If vaginal hemorrhage is present:
+-> IV NS WIDE OPEN, until peripheral pulses maintained
+-> If recently delivered, massage fundus until below umbilicus
+-> Place ABD / trauma pad at vaginal opening with direct pressure, replace pad when soaked; save all pads to estimate blood loss
+-> Do not pack vagina in attempt to control hemorrhage
+-> Reassess vital signs every 3-5 minutes
+-> Transport the pregnant patient in the left lateral recumbent position if past the 2nd trimester
+			
+If suspected abortion / miscarriage:
+-> Attempt to collect aborted material
+-> Watch for signs of shock
+			
+"""
+		}
+		if proto == "Cardiac Arrest with Pregnancy" {
+			protocolDescription.text = """
+-> Transport to the closest facility
+			
+CARDIAC ARREST With Pregnancy
+-> Notify the closest facility, as soon as possible, of patient condition and gestational age
+-> Chest compressions at a rate of 100-120/minute
+-> Manual left uterine displacement throughout resuscitation and after ROSC (tilting or wedge likely not good enough to get infant off pressing on aorta)
+-> Ventilate and oxygenate at 8-10 breaths per minute via BVM, KING, or ETT, use ETCO2
+-> Place on EKG monitor
+-> Initiate IV NS WIDE OPEN
+->Follow appropriate cardiac arrest protocol (Asystole, EMD/PEA, or Ventricular Fibrillation)
+
+"""
+		}
+		if proto == "OB Delivery Complications" {
+			protocolDescription.text = """
+-> Provide oxygen via nasal cannula, non-rebreather, or BVM to maintain oxygen saturation of 93-95%
+-> IV NS KVO
+-> Contact receiving facility ASAP
+			
+AMNIOTIC SAC PRESENTATION
+Amniotic sac visible, membrane not broken
+-> If no fetus visible, cover presenting part with moist, sterile dressing
+-> If head of the fetus had delivered, tear sac with fingers and continue steps for delivery
+			
+BREECH BIRTH
+Legs or buttocks presenting first
+-> Position mother for immediate transport; place patient supine and elevate her hips as high as possible to lessen pressure on the birth canal
+-> Do not pull on infant’s legs in attempt to delivery baby
+-> Do not allow mother to push
+-> If baby delivers, support body to avoid explosive delivery of the head
+-> During delivery, do not raise infant’s body above the horizontal level or cervical fracture may occur
+-> If body delivers and head fails to deliver, attempt to insert wide-spread fingers over the infant’s face or mouth and apply pressure to keep head flexed off of the umbilical cord
+			
+LIMB PRESENTATION
+Leg or arm presents before body
+-> Position mother for immediate transport; place patient supine and elevate her hips as high as possible to lessen pressure on the birth canal
+-> Do not pull on infant’s limbs in attempt to delivery baby
+-> If body delivers and head fails to deliver, attempt to insert fingers over the infant’s face or mouth and apply pressure to keep head flexed off of the umbilical cord
+			
+MULTIPLE BIRTHS
+-> Clamp and cut the cord of the first baby before the second baby is born
+-> Try to transport the mother before delivery of second baby as malpresentation is common with the second baby
+-> The second infant may be born before or after the placenta
+			
+NUCHAL CORD
+Umbilical cord around infant’s neck
+-> Instruct mother not to push; in attempt to keep pressure off of umbilical cord
+-> Attempt to slip cord over infant’s neck using caution not to tear cord
+-> If unable to slip cord over baby’s head, immediately clamp and cut and unwrap from around baby’s neck. Deliver baby immediately after this
+			
+PROLAPSED UMBILICAL CORD
+Umbilical cord presents in vaginal opening before delivery of the head
+-> Insert several fingers into the vagina underneath cord and gently push up on infant’s head or buttocks to relieve pressure on the cord; continue pushing upwards until relieved at the emergency department
+-> Do not attempt to push cord back in the vagina
+-> Position mother with head down and buttocks raised to lessen pressure on the birth canal
+			
+UTERINE RUPTURE
+Suspect uterine rupture with:
+	-> Severe, shearing, sudden pain during contractions
+	-> Loss of fetal heart tones or movement
+	-> Uterus palpable as a hard mass beside the fetus
+	-> Signs of shock
+-> Aggressively treat for shock
+-> Rapid transport for cesarean section
+"""
+		}
+		if proto == "Pre-Eclampsia" {
+			protocolDescription.text = """
+Only applicable for pregnant patients who are > 20 weeks gestation or those within 6 weeks postpartum
+			
+Patient must have systolic BP > 160 mmHg or diastolic BP > 110 mmHg and any of the following:
+	► severe headache
+	► severe upper abdominal pain
+	► acute visual changes
+	► edema of face or hands (not pedal edema)
+	► nausea and/or vomiting
+-> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%
+-> Determine serum glucose
+-> IV NS KVO
+-> CONTACT MEDICAL CONTROL and request Magnesium Sulfate 5 gm in NS 100 ml IV infused over 15-20 minutes
+-> Place on EKG monitor
+-> Transport the patient in the left lateral recumbent position
+-> Reassess vital signs every 3-5 minutes
+
+"""
+		}
+		if proto == "General Rules for Pediatric Patients" {
+			protocolDescription.text = """
+The phrase “CONTACT MEDICAL CONTROL” means to contact Vanderbilt Children’s Hospital Medical Control physician for any consultation or orders.
+
+-> As a general rule, a pediatric patient can be treated under the pediatric protocols until they reach the age of puberty (usually 11-13 years of age). When used, neonate refers to a child less than one month old.
+-> All patients, both transported and non-transported, should have their vital signs checked and documented
+-> Maintain an open airway via appropriate positioning and airway adjuncts as necessary
+-> Maintain appropriate oxygen saturation via nasal cannula, non-rebreather mask, BVM, or ETT
+-> IV lines should only be initiated if:
+	-> Intravenous drug administration is planned
+	-> Volume infusion is indicated
+	-> Patient has a critical, unstable, or potentially unstable injury or illness
+	-> Attempts should be limited to 3 per patient
+	-> Do not delay transport for intravenous access
+-> Intraosseous (IO) should be the first line access for any child in arrest
+	-> Intraosseous (IO) infusion is reserved for unconscious, critically ill patients < 12 years old
+-> Always maintain child’s body temperature. Expose only as necessary
+-> Utilize Broselow tape to determine child’s weight.
+	-> Dosages for Fentanyl and Versed on the Broselow tape are not consistent with departmental protocol
+-> All patients should be transported without delay
+			
+* All pediatric reports (radio & ePCR) must include child’s weight or Broselow color *
 
 """
 		}
