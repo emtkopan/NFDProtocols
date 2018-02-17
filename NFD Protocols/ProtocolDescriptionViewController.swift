@@ -21,7 +21,7 @@ class ProtocolDescriptionViewController: UIViewController {
         super.viewDidLoad()
 		
 		protocolTitle.text = proto
-		/* ["Atrial Fibrillation with Rapid Ventricular Response","Bradycardia/AV Blocks","Cardiac Arrest/AED","Cardiac Arrest - Asystole & EMD/PEA","Chest Pain or Presumed Acute Coronary Syndrome","Implantable Cardioverter Defibrillator (ICD) Deactivation","LVAD Transports","Premature Ventricular Contractions (PVCs) in Patients with Chest Pain","Presumed PSVT","Stemi Alert","Termination of Resuscitaiton (TOR)","Ventricular Fibrillation or Pulseless Ventricular Tachycardia","Wide Complex Tachycardia Presumed Ventricular Tachycardia", "Allergic Reaction/Anaphylaxis", "Altered Mental Status", "Asthma", "Congestive Heart Failure/Pulmonary Edema", "COPD, Emphysema, Bronchitis", "Agitated, Uncontrollable Patient or Patient with Presumed Excited Delirium or Psychosis", "Field Determination of Death", "Hypertensive Crisis", "Hyperthermia/Heat Stroke", "Hypoglycemia", "Hypothermia", "Nausea and Vomiting", "Nerve Agent Exposure, Symptomatic", "Overdose, Poisoning, Toxin Exposure", "Respiratory Distress", "Seizures", "Sepsis", "Shock", "Stroke", "Trauma Patients Who Are Agitated, Combatitive, And/Or Uncontrollable", "Burns", "Cervical Spine Clearance", "Cyanide Exposure", "Drowning/Near Drowning", "Adult Pain Mangement - Post Trauma", "Spinal Motion Restriction", "Snake Bite", "Trauma Alert Criteria", "Trauma Arrest & Termination of Resuscitation (TOR)", "Uncontrollable Hemorrhage (Extremity)", "Apgar Scoring", "Eclampsia", "Obstetrical/Gynecological Emergencies", "Cardiac Arrest with Pregnancy", "OB Delivery Complications", "Pre-Eclampsia","General Rules for Pediatric Patients", ]
+		/* ["Atrial Fibrillation with Rapid Ventricular Response","Bradycardia/AV Blocks","Cardiac Arrest/AED","Cardiac Arrest - Asystole & EMD/PEA","Chest Pain or Presumed Acute Coronary Syndrome","Implantable Cardioverter Defibrillator (ICD) Deactivation","LVAD Transports","Premature Ventricular Contractions (PVCs) in Patients with Chest Pain","Presumed PSVT","Stemi Alert","Termination of Resuscitaiton (TOR)","Ventricular Fibrillation or Pulseless Ventricular Tachycardia","Wide Complex Tachycardia Presumed Ventricular Tachycardia", "Allergic Reaction/Anaphylaxis", "Altered Mental Status", "Asthma", "Congestive Heart Failure/Pulmonary Edema", "COPD, Emphysema, Bronchitis", "Agitated, Uncontrollable Patient or Patient with Presumed Excited Delirium or Psychosis", "Field Determination of Death", "Hypertensive Crisis", "Hyperthermia/Heat Stroke", "Hypoglycemia", "Hypothermia", "Nausea and Vomiting", "Nerve Agent Exposure, Symptomatic", "Overdose, Poisoning, Toxin Exposure", "Respiratory Distress", "Seizures", "Sepsis", "Shock", "Stroke", "Trauma Patients Who Are Agitated, Combatitive, And/Or Uncontrollable", "Burns", "Cervical Spine Clearance", "Cyanide Exposure", "Drowning/Near Drowning", "Adult Pain Mangement - Post Trauma", "Spinal Motion Restriction", "Snake Bite", "Trauma Alert Criteria", "Trauma Arrest & Termination of Resuscitation (TOR)", "Uncontrollable Hemorrhage (Extremity)", "Apgar Scoring", "Eclampsia", "Obstetrical/Gynecological Emergencies", "Cardiac Arrest with Pregnancy", "OB Delivery Complications", "Pre-Eclampsia","General Rules for Pediatric Patients", "Pediatric Allergic Reactions/Anaphalaxis", "Pediatric Altered Mental Status (AMS), Syncope/Near Syncope", "Pediatric Asthma/Bronchospasm", "Pediatric Bradycardia", "Pediatric Burns", "Pediatric Cardiac Arrest, Asystole & EMD/PEA", "Pediatric Croup", "Pediatric Cyanide Exposure", "Pediatric Hypoglycemia", "Pediatric Hypovelemic Shock", "Pediatric Neonatal Resuscitation", "Pediatric Overdose/Ingestion", "Pediatric Seizures", "Pediatric Tachycardia", "Pediatric Trauma", "Pediatric Ventricular Fibrillation or Pulseless Ventricular Tachycardia", "Pediatric Drowning", ]
 */
 		
 		if  proto == "Atrial Fibrillation with Rapid Ventricular Response" {
@@ -1221,6 +1221,332 @@ The phrase “CONTACT MEDICAL CONTROL” means to contact Vanderbilt Children’
 -> All patients should be transported without delay
 			
 * All pediatric reports (radio & ePCR) must include child’s weight or Broselow color *
+
+"""
+		}
+		if proto == "Pediatric Allergic Reactions/Anaphalaxis" {
+			protocolDescription.text = """
+-> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%
+If patient is wheezing, hypotensive, or in respiratory distress:
+-> Epinephrine 1:1000 0.01 mg/kg IM (0.1 ml / 10 kg, max dose 0.3ml)
+-> DuoNeb by continuous inhalation if patient is wheezing after Epinephrine
+-> Repeat Epinephrine if patient remains hypotensive or in respiratory distress after 5 minutes
+-> Benadryl 1.0 mg/kg IV, IM (maximum 25 mg)
+-> IV NS 20 ml/kg bolus, if evidence of shock persists after Epinephrine
+
+"""
+		}
+		if proto == "Pediatric Altered Mental Status (AMS), Syncope/Near Syncope" {
+			protocolDescription.text = """
+-> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%
+-> Determine patient’s serum glucose
+-> Place on EKG monitor
+-> IV NS KVO
+-> Obtain a thorough assessment, consider potential causes, and refer to appropriate protocol
+	-> Seizures
+	-> Stroke
+	-> Trauma
+	-> Overdose
+	-> Hypo / Hyperglycemia
+	-> Cardiac / MI
+	-> Sepsis
+	-> Shock
+	-> Psychiatric
+
+"""
+		}
+		if proto == "Pediatric Asthma/Bronchospasm" {
+			protocolDescription.text = """
+-> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%
+-> DuoNeb by continuous inhalation
+-> Place on EKG monitor
+			
+If patient has severe respiratory distress and/or not improving after 3-5 minutes of DuoNeb, administer:
+-> Epinephrine 1:1000 0.01mg/kg IM (0.1 ml/10 kg) max dose 0.3 mg
+			
+For patients who do not begin to significantly improve after Duoneb and Epinephrine, administer:
+-> Magnesium Sulfate 50 mg/kg in NS 100 ml IV infused over 10 minutes (maximum 2 gm)
+
+* CONTACT MEDICAL CONTROL for patients who are not improving, have unstable vital signs, or who have impending respiratory failure. *
+			
+"""
+		}
+		if proto == "Pediatric Bradycardia" {
+			protocolDescription.text = """
+Patients must have one or more of the following:
+	► Hypotension
+	► Altered mental status
+	► Signs of poor perfusion
+			
+Bradycardia in children is generally due to hypoxia. Airway, ventilation, and oxygenation are the priority.
+-> Provide oxygen via non-rebreather or BVM to maintain oxygen saturation of 93-95%
+-> Place on EKG monitor
+-> Determine patient’s serum glucose
+-> HR < 60 and poor perfusion start chest compressions
+-> IO, IV NS
+-> Epinephrine 1:10,000 0.01 mg/kg IO, IV (1 ml/10 kg) q 3 minutes (max. dose 1 mg)
+
+"""
+		}
+		if proto == "Pediatric Burns" {
+			protocolDescription.text = """
+-> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%
+-> Remove jewelry from the affected area
+-> Cool the burn
+-> Cover burned area with a dry sterile dressing or burn sheet
+	-> Do not wet large burns; avoid hypothermia
+-> Place on EKG monitor
+-> Fentanyl 1.0 mcg/kg IV, IN, or IM (max. 50 mcg) for pain
+	-> Before using pain meds in patients with smoke inhalation, facial burns, airway burns, head injury or multisystem trauma, CONTACT MEDICAL CONTROL for approval
+	-> For additional Fentanyl, CONTACT MEDICAL CONTROL
+-> IV NS KVO; if hypotensive, 10 ml/kg/hr (See below for drip formula). Avoid burned area
+
+Pediatric Burn Percentages:
+HEAD FRONT - 9%
+HEAD BACK - 9%
+TORSO FRONT - 18%
+TORSO BACK - 18%
+ARMS FRONT - 4.5% EACH
+ARMS BACK - 4.5% EACH
+GROIN - 1%
+LEGS FRONT - 6.7% EACH
+LEGS BACK - 6.7% EACH
+
+Drip formula:
+			10ml/kg x tube size
+Drops/min = -------------------
+				60 Minutes
+			
+"""
+		}
+		if proto == "Pediatric Cardiac Arrest, Asystole & EMD/PEA" {
+			protocolDescription.text = """
+-> Begin chest compressions at a rate of 100-120/minute
+-> Ventilate and oxygenate at 8-10 breaths per minute via BVM or ETT, use ETCO2
+-> Place on EKG monitor
+
+ASYSTOLE
+verify in two leads
+-> Epinephrine 1:10,000 0.01 mg/kg IO, IV (1 ml/10 kg) q 3-5 minutes (max. dose 1.0 mg)
+-> NS 20-40 ml/kg IO, IV
+-> Shock 2J / kg biphasic (if VF suspected)
+-> Transport
+			
+EMD/PEA
+-> Epinephrine 1:10,000 0.01 mg/kg IO, IV (1ml/10 kg) q 3-5 minutes (max. dose 1.0 mg)
+-> NS 20-40 ml/kg IO, IV
+-> Narcan 2 mg IO, IV if suspected OD
+-> Transport
+			
+"""
+		}
+		if proto == "Pediatric Croup" {
+			protocolDescription.text = """
+Patient may present with one or more of the following:
+	► barking cough
+	► retractions
+	► stridor
+-> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%
+-> DuoNeb by continuous inhalation
+-> Place on EKG monitor
+			
+If patient has severe respiratory distress and/or not improving after 3-5 minutes of DuoNeb, CONTACT MEDICAL CONTROL and request:
+-> Epinephrine 1:1000 2 mg (2 ml) diluted with NS 2.5 ml via nebulizer
+			
+* CONTACT MEDICAL CONTROL for patients who are not improving, have unstable vital signs, or who have impending respiratory failure. *
+
+"""
+		}
+		if proto == "Pediatric Cyanide Exposure" {
+			protocolDescription.text = """
+-> Provide oxygen via nasal cannula, non-rebreather, BVM, KING, or ETT, to maintain oxygen saturation of 100%
+-> Determine serum glucose
+-> Determine CO and SpO2
+-> Place on EKG monitor
+-> IV, IO NS
+			
+Only indicated in patients that have sustained exposure to fire or smoke in an enclosed area and have an altered mental status, unconscious, or in cardiac arrest.
+-> Administer CYANOKIT (hydroxocobalamin)
+	-> Requires separate IV, IO; do not administer medications simultaneously with Cyanokit
+	-> Reconstitute with Normal Saline 200 ml, using transfer spike
+	-> Mix by rotating and rocking vial for 60 seconds; do not shake
+	-> Using buretrol, transfer correct weight base dose/volume into buretrol chamber
+	-> Close clamp above buretrol chamber
+	-> Flush tubing and avoid wasting medication
+	-> Infuse over 10 - 15 minutes wide open
+
+BROSELOW			WEIGHT			DOSE		VOLUME
+GRAY		3-5 kg (6-11 lbs)		375 mg		15 ml
+PINK/RED	6-9 kg (12-20 lbs)		625 mg		25 ml
+PURPLE		10-11 kg (21-25 lbs)	750 mg		30 ml
+YELLOW		12-14 kg (26-31 lbs)	1000 mg		40 ml
+WHITE		15-18 kg (32-40 lbs)	1250 mg		50 ml
+BLUE		19-23 kg (41-51 lbs)	1625 mg		65 ml
+ORANGE		24-29 kg (52-65 lbs)	2000 mg		80 ml
+GREEN		30-36 kg (66-79 lbs)	2500 mg		100 ml
+			
+Due to its dark red color, hydroxocobalamin changes the pigmentation of the blood and may prevent accurate CO and SpO2 monitoring.
+			
+"""
+		}
+		if proto == "Pediatric Hypoglycemia" {
+			protocolDescription.text = """
+-> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%
+-> Determine serum glucose. If less than 60 mg/dl:
+-> Oral glucose, if patient is awake, maintaining an open airway, and making purposeful movements
+-> IV Dextrose slow with NS flush, monitor for infiltration
+	-> D50W 1 ml/kg, Children 12 years and older
+	-> D25W 2 ml/kg, Children younger than 12 years
+	-> D10W 5 ml/kg, Infants (0-1 year) or IO administration
+-> Reassess serum glucose in 5 minutes. If < 60 mg/dl, administer 1/2 initial amount of Dextrose IV slow
+-> Glucagon IM, if no IV access
+	-> 1 mg IM, > 20 kg (44 lbs) deltoid or thigh
+	-> 0.5 mg IM, < 20 kg (44 lbs) thigh
+	-> Glucagon must be reconstituted
+	-> Glucagon is an IM injection only, NEVER IV
+	-> May take up to 30 minutes to be effective
+ 
+DEXTROSE DILUTION
+D25W -> Waste 25 ml D50W from pre-filled syringe. Withdraw 25 ml NS from IV bag using same syringe. Gently agitate to mix solution.
+D10W -> Waste 40 ml D50W from pre-filled syringe. Withdraw 40 ml NS from IV bag using same syringe. Gently agitate to mix solution.
+
+"""
+		}
+		if proto == "Pediatric Hypovelemic Shock" {
+			protocolDescription.text = """
+-> Provide oxygen via nasal cannula, non-rebreather, or BVM to maintain oxygen saturation of 93-95%
+-> Immobilize patient if suspected spinal injury (Refer to Spinal Motion Restriction protocol)
+-> IV NS 20 ml/kg bolus
+	-> Reassess, may repeat bolus up to 2 more times, max. 60 ml/kg
+-> Place on EKG monitor
+-> Maintain child’s body temperature
+-> Call Trauma Alert if indicated. (Refer to Trauma Alert protocol)
+
+"""
+		}
+		if proto == "Pediatric Neonatal Resuscitation" {
+			protocolDescription.text = """
+-> Suction the infant’s airway using bulb syringe as soon as the head is delivered  Suction the mouth first and then the nose; note any evidence of meconium
+-> Dry the baby thoroughly with sterile towels found in OB kit
+-> Suction the infant’s airway again using a bulb syringe
+-> Assess breathing and circulation
+-> If ventilation is inadequate, stimulate the infant by gently rubbing the upper back or flicking the soles of the feet and provide blow-by O2
+-> If ventilation is still inadequate, assist ventilations with BVM at 40-60 breaths per minute with 100% O2
+			
+If heart rate < 60 after 30 seconds of assisted ventilations:
+	-> Continue assisting ventilations
+	-> Begin chest compressions at 120 per minute (3 compressions:1 ventilation)
+			
+If no improvement in heart rate
+	-> Epinephrine 1:10,000 0.1 ml/kg IO, IV q 3 minutes
+
+"""
+		}
+		if proto == "Pediatric Overdose/Ingestion" {
+			protocolDescription.text = """
+-> Provide oxygen via nasal cannula, non-rebreather, or BVM to maintain oxygen saturation of 93-95%
+-> Place on EKG monitor
+-> Determine serum glucose
+	-> If glucose <60 refer to Pediatric Hypoglycemia protocol
+-> IV NS KVO; if hypotensive and/or bradycardic, 20 ml/kg bolus
+	-> Reassess, may repeat bolus up to 2 more times, max. 60 ml/kg
+-> Narcan 2 mg IV, IO, IN or IM; for AMS or respiratory depression
+	-> Repeat as necessary
+-> For seizure related to overdose, refer to Pediatric Seizure protocol
+			
+CLONIDINE OVERDOSE
+If signs of respiratory depression and/or altered mental status
+-> Narcan 2 mg IVP
+	-> Repeat until symptom reversal
+	-> Maximum 10 mg
+			
+TRICYCLIC OVERDOSE
+-> Acquire and transmit 12 lead EKG
+	-> Assess for QRS/QT prolongation
+If QRS duration > 100 ms OR
+QT prolongation > 500 ms
+-> CONTACT MEDICAL CONTROL to discuss and give if directed:
+-> Sodium Bicarbonate 1 meq/kg
+-> Magnesium Sulfate 25 mg/kg (max 2 gm)
+			
+"""
+		}
+		if proto == "Pediatric Seizures" {
+			protocolDescription.text = """
+-> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%
+-> Determine serum glucose
+			
+If seizures lasting longer than 5 minutes or status epilepticus:
+-> Versed 0.1 mg/kg IM, IV, IN (maximum 2 mg)
+-> IV NS KVO
+-> Place on EKG monitor
+-> CONTACT MEDICAL CONTROL for additional orders if seizures continue
+
+"""
+		}
+		if proto == "Pediatric Tachycardia" {
+			protocolDescription.text = """
+-> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%
+-> Acquire and transmit 12 lead EKG
+-> IV NS 20 ml/kg bolus
+
+STABLE - Conscious, normotensive, perfusing well
+-> Vagal stimulation
+	-> Infant: cold packs to face (apply over eyes and bridge of nose)
+	-> Child: blow through obstructed tubing
+			
+UNSTABLE - altered mental status or poor perfusion
+CONTACT MEDICAL CONTROL to discuss and administer if directed:
+-> Synchronized cardioversion 1 J/Kg
+-> Premedicate with Versed 0.1 mg/kg IO, IV (maximum 2 mg)
+			
+"""
+		}
+		if proto == "Pediatric Trauma" {
+			protocolDescription.text = """
+-> Provide oxygen via non-rebreather or BVM to maintain oxygen saturation of 93-95%
+-> Immobilize patient if suspected spinal injury (Refer to Spinal Motion Restriction protocol)
+-> Call Trauma Alert if indicated. (Refer to Trauma Alert protocol)
+-> Maintain child’s body temperature
+-> IV NS , or IO if extremis
+	-> 20 ml/kg bolus if hypotensive
+	-> Reassess after bolus
+	-> If signs of shock persist, bolus up to 2 times, max. 60 ml/kg
+-> Fentanyl 1.0 mcg/kg IV, IN, or IM (maximum dose 50 mcg)
+	-> For patients with multi-system trauma, head injury, AMS, hypotension, hypoxia, or airway burns;
+	CONTACT MEDICAL CONTROL to discuss Fentanyl
+	->For additional Fentanyl, CONTACT MEDICAL CONTROL
+
+"""
+		}
+		if proto == "Pediatric Ventricular Fibrillation or Pulseless Ventricular Tachycardia" {
+			protocolDescription.text = """
+-> Begin chest compressions at a rate of 100-120/minute
+	-> Limit interruptions in chest compressions to less than 10 seconds
+-> Continue high quality chest compressions at a rate of 100-120/minute
+-> Initiate IO, IV NS and administer Epinephrine 0.01 mg /kg IO
+-> Ventilate and oxygenate at 8-10 breaths per minute via BVM or ETT, use ETCO2
+-> Defibrillate 4 Joules/kg every 2 minutes
+-> Continue high quality chest compressions at a rate 100-120/minute
+-> Lidocaine 1 mg/kg IO, IV (max. 100 mg), flush IO line of  with 20 ml NS
+-> Defibrillate 4 Joules/kg every 2 minutes
+-> Continue high quality chest compressions at a rate of 100-120/minute
+-> Magnesium 50 mg/kg IO, IV for torsades, +/- Pro-  longed QT, +/- HypoK/HypoMag suspected
+-> Defibrillate 4 Joules/kg every 2 minutes
+
+"""
+		}
+		if proto == "Pediatric Drowning" {
+			protocolDescription.text = """
+-> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%
+-> IF cardiac arrest, begin with 5 rescue breaths then begin chest compressions
+-> Do NOT perform Heimlich maneuver
+-> Immobilize patient if suspected spinal injury
+-> Place on EKG monitor
+-> Determine serum glucose
+-> Remove wet clothing and dry patient
+-> Monitor airway and rhythm for changes
+-> Closely monitor O2 saturation and respiratory rate
 
 """
 		}
