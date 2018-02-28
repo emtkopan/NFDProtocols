@@ -14,17 +14,17 @@ class ProtocolDescriptionViewController: UIViewController {
 	@IBOutlet weak var protocolDescription: UITextView!
 	
 	
-	var proto = ""
+	var definition = ""
 	
 	
     override func viewDidLoad() {
         super.viewDidLoad()
 		
-		protocolTitle.text = proto
+		protocolTitle.text = definition
 		/* ["Atrial Fibrillation with Rapid Ventricular Response","Bradycardia/AV Blocks","Cardiac Arrest/AED","Cardiac Arrest - Asystole & EMD/PEA","Chest Pain or Presumed Acute Coronary Syndrome","Implantable Cardioverter Defibrillator (ICD) Deactivation","LVAD Transports","Premature Ventricular Contractions (PVCs) in Patients with Chest Pain","Presumed PSVT","Stemi Alert","Termination of Resuscitaiton (TOR)","Ventricular Fibrillation or Pulseless Ventricular Tachycardia","Wide Complex Tachycardia Presumed Ventricular Tachycardia", "Allergic Reaction/Anaphylaxis", "Altered Mental Status", "Asthma", "Congestive Heart Failure/Pulmonary Edema", "COPD, Emphysema, Bronchitis", "Agitated, Uncontrollable Patient or Patient with Presumed Excited Delirium or Psychosis", "Field Determination of Death", "Hypertensive Crisis", "Hyperthermia/Heat Stroke", "Hypoglycemia", "Hypothermia", "Nausea and Vomiting", "Nerve Agent Exposure, Symptomatic", "Overdose, Poisoning, Toxin Exposure", "Respiratory Distress", "Seizures", "Sepsis", "Shock", "Stroke", "Trauma Patients Who Are Agitated, Combatitive, And/Or Uncontrollable", "Burns", "Cervical Spine Clearance", "Cyanide Exposure", "Drowning/Near Drowning", "Adult Pain Mangement - Post Trauma", "Spinal Motion Restriction", "Snake Bite", "Trauma Alert Criteria", "Trauma Arrest & Termination of Resuscitation (TOR)", "Uncontrollable Hemorrhage (Extremity)", "Apgar Scoring", "Eclampsia", "Obstetrical/Gynecological Emergencies", "Cardiac Arrest with Pregnancy", "OB Delivery Complications", "Pre-Eclampsia","General Rules for Pediatric Patients", "Pediatric Allergic Reactions/Anaphalaxis", "Pediatric Altered Mental Status (AMS), Syncope/Near Syncope", "Pediatric Asthma/Bronchospasm", "Pediatric Bradycardia", "Pediatric Burns", "Pediatric Cardiac Arrest, Asystole & EMD/PEA", "Pediatric Croup", "Pediatric Cyanide Exposure", "Pediatric Hypoglycemia", "Pediatric Hypovelemic Shock", "Pediatric Neonatal Resuscitation", "Pediatric Overdose/Ingestion", "Pediatric Seizures", "Pediatric Tachycardia", "Pediatric Trauma", "Pediatric Ventricular Fibrillation or Pulseless Ventricular Tachycardia", "Pediatric Drowning", ]
 */
 		
-		if  proto == "Atrial Fibrillation with Rapid Ventricular Response" {
+		if  definition == "Atrial Fibrillation with Rapid Ventricular Response" {
 			protocolDescription.text = """
 Pt must have ONE OR MORE of the following:
 	►chest pain
@@ -43,7 +43,7 @@ If patient remains symptomatic and rate above 120, CONTACT MEDICAL CONTROL to di
 			
 """
 		}
-		if proto == "Bradycardia/AV Blocks" {
+		if definition == "Bradycardia/AV Blocks" {
 		protocolDescription.text = """
 Patients must have one or more of the following:
 		► Chest pain ► Hypotension ► Altered mental status
@@ -83,7 +83,7 @@ Patients must have one or more of the following:
 			
 """
     }
-		if proto == "Cardiac Arrest/AED" {
+		if definition == "Cardiac Arrest/AED" {
 			protocolDescription.text = """
 Emphasis on consistent compressions and quick defibrillation
 -> Responder 1—Begin chest compressions at a rate of 100-120/minute
@@ -99,7 +99,7 @@ If shock is indicated, perform chest compressions during the “Charging” phas
 If patient is pregnant, refer to Cardiac Arrest with Pregnancy protocol
 """
 		}
-		if proto == "Cardiac Arrest - Asystole & EMD/PEA" {
+		if definition == "Cardiac Arrest - Asystole & EMD/PEA" {
 			protocolDescription.text = """
 -> Begin chest compressions at a rate of 100-120/minute
 -> Ventilate and oxygenate at 8-10 breaths per minute via BVM, KING, or ETT, use ETCO2
@@ -131,7 +131,7 @@ If patient is pregnant, refer to Cardiac Arrest with Pregnancy protocol
 			
 """
 		}
-		if proto == "Chest Pain or Presumed Acute Coronary Syndrome" {
+		if definition == "Chest Pain or Presumed Acute Coronary Syndrome" {
 			protocolDescription.text = """
 	APPLIES TO ADULTS 18 YEARS OF AGE AND OLDER NOT FOR CHEST PAIN DUE TO ACUTE TRAUMA
 		
@@ -155,7 +155,7 @@ If chest pain is unrelieved after 3 doses of NTG or 12 lead EKG indicates Inferi
 -> Zofran (ondansetron) 4 mg IV, if patient complains of nausea
 """
 		}
-		if proto == "Implantable Cardioverter Defibrillator (ICD) Deactivation" {
+		if definition == "Implantable Cardioverter Defibrillator (ICD) Deactivation" {
 			protocolDescription.text = """
 Indication: The ICD is firing inappropriately with a stable rhythm present
 -> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
@@ -171,7 +171,7 @@ To deactivate device:
 			
 """
 	}
-		if proto == "LVAD Transports" {
+		if definition == "LVAD Transports" {
 			protocolDescription.text = """
 -> GENERAL INFORMATION
 	-> Most patients will not have a palpable pulse and may NOT have an obtainable and reliable blood pressure by monitor. Judge perfusion by mentation and skin perfusion.
@@ -198,7 +198,7 @@ To deactivate device:
 		
 """
 		}
-		if proto == "Premature Ventricular Contractions (PVCs) in Patients with Chest Pain" {
+		if definition == "Premature Ventricular Contractions (PVCs) in Patients with Chest Pain" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
 -> Administer 324 mg chewable aspirin PO (four tablets)
@@ -223,7 +223,7 @@ To deactivate device:
 			
 """
 		}
-		if proto == "Presumed PSVT" {
+		if definition == "Presumed PSVT" {
 			protocolDescription.text = """
 (Non Sinus, Narrow Complex, Regular Tachycardia)
 DO NOT CONFUSE PSVT WITH ATRIAL FIBRILLATION ADMINISTERING ADENOSINE TO A PATIENT IN ATRIAL FIBRILLATION CAN BE DETRIMENTAL
@@ -259,7 +259,7 @@ CONTACT MEDICAL CONTROL to discuss and give if directed:
 			
 """
 		}
-		if proto == "Stemi Alert" {
+		if definition == "Stemi Alert" {
 			protocolDescription.text = """
 A “STEMI Alert” is used to alert the receiving hospital when a patient with a potential ST–segment elevation MI is being transported to their facility by Nashville Fire Department EMS.
 -> A “STEMI Alert” should be called into the receiving hospital at the earliest opportunity to allow time to activate appropriate staff
@@ -274,7 +274,7 @@ STEMI (ST-Segment Elevation MI)
 		
 """
 		}
-		if proto == "Termination of Resuscitaiton (TOR)" {
+		if definition == "Termination of Resuscitaiton (TOR)" {
 			protocolDescription.text = """
 For Adult MEDICAL Cardiac Arrest
 TOR should never be considered in a patient if there are any signs of life, including but not limited to:
@@ -323,7 +323,7 @@ REFRACTORY EMD/PEA
 			
 """
 		}
-		if proto == "Ventricular Fibrillation or Pulseless Ventricular Tachycardia" {
+		if definition == "Ventricular Fibrillation or Pulseless Ventricular Tachycardia" {
 			protocolDescription.text = """
 * Begin chest compressions at a rate of 100-120/minute
 * Limit interruptions in chest compressions to less than 10 seconds
@@ -350,7 +350,7 @@ REFRACTORY EMD/PEA
 			
 """
 		}
-		if proto == "Wide Complex Tachycardia Presumed Ventricular Tachycardia" {
+		if definition == "Wide Complex Tachycardia Presumed Ventricular Tachycardia" {
 			protocolDescription.text = """
 * Pulseless Ventricular Tachycardia refer to Ventricular Fibrillation protocol
 			
@@ -377,7 +377,7 @@ If Torsades:
 
 """
 		}
-		if proto == "Allergic Reaction/Anaphylaxis" {
+		if definition == "Allergic Reaction/Anaphylaxis" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
 -> Epinephrine 1:1000 0.3 mg IM
@@ -402,7 +402,7 @@ Epinephrine drip—Start at 2.5 micrograms/minute (15 microdrips per minute)
 			
 """
 		}
-		if proto == "Altered Mental Status (AMS)" {
+		if definition == "Altered Mental Status (AMS)" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
 -> Determine patient’s serum glucose
@@ -419,7 +419,7 @@ Epinephrine drip—Start at 2.5 micrograms/minute (15 microdrips per minute)
 
 """
 		}
-		if proto == "Asthma" {
+		if definition == "Asthma" {
 			protocolDescription.text = """
 (Not for COPD, EMPHYSEMA, BRONCHITIS)
 			
@@ -445,7 +445,7 @@ NOT IMPROVING/RESPIRATORY FAILURE
 			
 """
 		}
-		if proto == "Congestive Heart Failure/Pulmonary Edema" {
+		if definition == "Congestive Heart Failure/Pulmonary Edema" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
 -> Administer NTG 0.4 mg SL
@@ -468,7 +468,7 @@ NOT IMPROVING/RESPIRATORY FAILURE
 
 """
 		}
-		if proto == "COPD, Emphysema, Bronchitis" {
+		if definition == "COPD, Emphysema, Bronchitis" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 89-92%
 -> DuoNeb by continuous inhalation
@@ -489,7 +489,7 @@ Patients with severe bronchospasm who do not begin to significantly improve afte
 
 """
 		}
-		if proto == "Agitated, Uncontrollable Patient or Patient with Presumed Excited Delirium or Psychosis" {
+		if definition == "Agitated, Uncontrollable Patient or Patient with Presumed Excited Delirium or Psychosis" {
 			protocolDescription.text = """
 *** This protocol is to be used in conjunction with the Nashville Fire Department’s Operational Procedure and Guideline on the use of patient restraint. Notify an EMS Chief as soon as possible whenever you en- counter a patient who may require this protocol. ***
 
@@ -506,7 +506,7 @@ Patients with severe bronchospasm who do not begin to significantly improve afte
 
 """
 		}
-		if proto == "Field Determination of Death" {
+		if definition == "Field Determination of Death" {
 			protocolDescription.text = """
 *** Resuscitation need not be attempted, or continued, if a dead (pulseless, apneic, without signs of life) patient has one or more of the following: ***
 -> Rigor mortis
@@ -522,7 +522,7 @@ Patients with severe bronchospasm who do not begin to significantly improve afte
 *** Personnel should make every effort to capture an EKG monitor strip for all patients determined to be dead in the field unless decomposing body tissue, devastating injury, or in an effort to preserve a potential crime scene. ***
 """
 		}
-		if proto == "Hyperglycemia" {
+		if definition == "Hyperglycemia" {
 			protocolDescription.text = """
 Blood Glucose > 400 mg/dl
 
@@ -532,7 +532,7 @@ Blood Glucose > 400 mg/dl
 
 """
 		}
-		if proto == "Hypertensive Crisis" {
+		if definition == "Hypertensive Crisis" {
 			protocolDescription.text = """
 * Systolic BP 180 mmHg or higher and/or
   Diastolic BP 120 mmHg or higher *
@@ -561,7 +561,7 @@ Blood Glucose > 400 mg/dl
 
 """
 		}
-		if proto == "Hyperthermia/Heat Stroke" {
+		if definition == "Hyperthermia/Heat Stroke" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
 -> Keep patient wet
@@ -572,7 +572,7 @@ Blood Glucose > 400 mg/dl
 
 """
 		}
-		if proto == "Hypoglycemia" {
+		if definition == "Hypoglycemia" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
 -> Determine serum glucose. If less than 60 mg/dl:
@@ -595,7 +595,7 @@ Blood Glucose > 400 mg/dl
 			
 """
 		}
-		if proto == "Hypothermia" {
+		if definition == "Hypothermia" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
 -> Handle patient very carefully. Avoid jostling patient excessively
@@ -608,7 +608,7 @@ Blood Glucose > 400 mg/dl
 
 """
 		}
-		if proto == "Nausea and Vomiting" {
+		if definition == "Nausea and Vomiting" {
 			protocolDescription.text = """
 (Antiemetic)
 			
@@ -617,7 +617,7 @@ Blood Glucose > 400 mg/dl
 
 """
 		}
-		if proto == "Nerve Agent Exposure, Symptomatic" {
+		if definition == "Nerve Agent Exposure, Symptomatic" {
 			protocolDescription.text = """
 	Nerve Agent Antidote Kit:
 -> DuoDote auto-injector delivers Atropine 2.1 mg and 2-Pam Cl (pralidoxime chloride) 600 mg in one injection
@@ -655,7 +655,7 @@ E mesis
 			
 """
 		}
-		if proto == "Overdose, Poisoning, Toxin Exposure" {
+		if definition == "Overdose, Poisoning, Toxin Exposure" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
 -> If suspected carbon monoxide poisoning, apply oxygen via non rebreather regardless of SpO2 reading
@@ -672,7 +672,7 @@ E mesis
 
 """
 		}
-		if proto == "Respiratory Distress" {
+		if definition == "Respiratory Distress" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
 -> DuoNeb by continuous inhalation if wheezing
@@ -687,7 +687,7 @@ E mesis
 			
 """
 		}
-		if proto == "Seizures" {
+		if definition == "Seizures" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
 -> Determine serum glucose
@@ -705,7 +705,7 @@ If seizures persist for longer than 4-5 minutes after second dose:
 			
 """
 		}
-		if proto == "Sepsis" {
+		if definition == "Sepsis" {
 			protocolDescription.text = """
 Suspicion of systemic infection plus one or more of the following:
 	► Heart rate >100
@@ -721,7 +721,7 @@ Suspicion of systemic infection plus one or more of the following:
 			
 """
 		}
-		if proto == "Shock" {
+		if definition == "Shock" {
 			protocolDescription.text = """
 Systolic BP < 90mmHg AND signs of hypoperfusion (hemorrhagic, hypovolemic, neurogenic, septic)
 			
@@ -732,7 +732,7 @@ Systolic BP < 90mmHg AND signs of hypoperfusion (hemorrhagic, hypovolemic, neuro
 
 """
 		}
-		if proto == "Stroke" {
+		if definition == "Stroke" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
 -> Determine serum glucose
@@ -752,7 +752,7 @@ Systolic BP < 90mmHg AND signs of hypoperfusion (hemorrhagic, hypovolemic, neuro
 			
 """
 		}
-		if proto == "Syncope/Near Syncope" {
+		if definition == "Syncope/Near Syncope" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
 -> Determine serum glucose
@@ -763,7 +763,7 @@ Systolic BP < 90mmHg AND signs of hypoperfusion (hemorrhagic, hypovolemic, neuro
 
 """
 		}
-		if proto == "Trauma Patients Who Are Agitated, Combatitive, And/Or Uncontrollable" {
+		if definition == "Trauma Patients Who Are Agitated, Combatitive, And/Or Uncontrollable" {
 			protocolDescription.text = """
 This protocol is to be used in conjunction with the Nashville Fire Department’s Operational Procedure and Guideline on the use of patient restraint. Notify an EMS Chief as soon as possible whenever you en- counter a patient who may require this protocol.
 
@@ -788,7 +788,7 @@ This protocol is to be used in conjunction with the Nashville Fire Department’
 
 """
 		}
-		if proto == "Burns" {
+		if definition == "Burns" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
 -> Remove jewelry from the affected area
@@ -813,7 +813,7 @@ Burn percentages:
 			
 """
 		}
-		if proto == "Cervical Spine Clearance" {
+		if definition == "Cervical Spine Clearance" {
 			protocolDescription.text = """
 This protocol shall only apply to patients that are alert and have the capacity to make informed decisions.
 			
@@ -829,7 +829,7 @@ If spinal immobilization is not initiated, the medical record must reflect asses
 
 """
 		}
-		if proto == "Chest Trauma" {
+		if definition == "Chest Trauma" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula, non-rebreather, or BVM to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
 -> Immobilize patient if suspected spinal injury (Refer to Spinal Motion Restriction protocol)
@@ -844,7 +844,7 @@ If spinal immobilization is not initiated, the medical record must reflect asses
 
 """
 		}
-		if proto == "Cyanide Exposure" {
+		if definition == "Cyanide Exposure" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula, non-rebreather, BVM, KING, or ETT, to maintain oxygen saturation of 100%
 -> Determine serum glucose
@@ -865,7 +865,7 @@ Only indicated in patients that have sustained exposure to fire or smoke in an e
 			
 """
 		}
-		if proto == "Drowning/Near Drowning" {
+		if definition == "Drowning/Near Drowning" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
 -> Immobilize patient if suspected spinal injury (Refer to Spinal Motion Restriction protocol)
@@ -877,7 +877,7 @@ Only indicated in patients that have sustained exposure to fire or smoke in an e
 			
 """
 		}
-		if proto == "Adult Pain Mangement - Post Trauma" {
+		if definition == "Adult Pain Mangement - Post Trauma" {
 			protocolDescription.text = """
 Protocol applies to patients > 16 years old. For pediatric patients refer to Pediatric Trauma protocol or CONTACT MEDICAL CONTROL at Vanderbilt Children’s Hospital.
 			
@@ -895,7 +895,7 @@ If respiratory depression occurs:
 			
 """
 		}
-		if proto == "Spinal Motion Restriction" {
+		if definition == "Spinal Motion Restriction" {
 			protocolDescription.text = """
 Applies to patients Age 3 & Up
 			
@@ -929,7 +929,7 @@ If in doubt, use full spinal immobilization.
 			
 """
 		}
-		if proto == "Snake Bite" {
+		if definition == "Snake Bite" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula, non-rebreather, or BVM to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
 -> Remove rings, bracelets, and watch if extremity is affected
@@ -938,7 +938,7 @@ If in doubt, use full spinal immobilization.
 
 """
 		}
-		if proto == "Trauma Alert Criteria" {
+		if definition == "Trauma Alert Criteria" {
 			protocolDescription.text = """
 The goal is for the Trauma Center to receive the initial Trauma Alert notification as early as possible prior to the patient’s arrival at the trauma center.
 			
@@ -978,7 +978,7 @@ If time permits during transport, notify the Trauma Center via Trauma Alert Upda
 
 """
 		}
-		if proto == "Trauma Arrest & Termination of Resuscitation (TOR)" {
+		if definition == "Trauma Arrest & Termination of Resuscitation (TOR)" {
 			protocolDescription.text = """
 For Adult TRAUMA Cardiac Arrest
 TOR should never be considered in a patient if there are any signs of life, including but not limited to:
@@ -1020,7 +1020,7 @@ CONTACT MEDICAL CONTROL to discuss termination of resuscitative efforts during t
 			
 """
 		}
-		if proto == "Uncontrollable Hemorrhage (Extremity)" {
+		if definition == "Uncontrollable Hemorrhage (Extremity)" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula, non-rebreather, or BVM to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
 -> Immobilize patient if suspected spinal injury (Refer to Spinal Motion Restriction protocol)
@@ -1037,7 +1037,7 @@ CONTACT MEDICAL CONTROL to discuss termination of resuscitative efforts during t
 
 """
 		}
-		if proto == "Apgar Scoring" {
+		if definition == "Apgar Scoring" {
 			protocolDescription.text = """
 -> Assess APGAR scores at 1 and 5 minutes post delivery
 			
@@ -1072,7 +1072,7 @@ Strong cry - 2
 			
 """
 		}
-		if proto == "Eclampsia" {
+		if definition == "Eclampsia" {
 			protocolDescription.text = """
 Only applicable for pregnant patients who are > 20 weeks gestation or those within 6 weeks postpartum
 
@@ -1093,7 +1093,7 @@ If patient continues to experience seizure after initial 5 gm is administered:
 
 """
 		}
-		if proto == "Obstetrical/Gynecological Emergencies" {
+		if definition == "Obstetrical/Gynecological Emergencies" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula, non-rebreather, or BVM to maintain oxygen saturation of 93-95%, unless COPD (89-92%)
 			
@@ -1111,7 +1111,7 @@ If suspected abortion / miscarriage:
 			
 """
 		}
-		if proto == "Cardiac Arrest with Pregnancy" {
+		if definition == "Cardiac Arrest with Pregnancy" {
 			protocolDescription.text = """
 -> Transport to the closest facility
 			
@@ -1126,7 +1126,7 @@ CARDIAC ARREST With Pregnancy
 
 """
 		}
-		if proto == "OB Delivery Complications" {
+		if definition == "OB Delivery Complications" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula, non-rebreather, or BVM to maintain oxygen saturation of 93-95%
 -> IV NS KVO
@@ -1179,7 +1179,7 @@ Suspect uterine rupture with:
 -> Rapid transport for cesarean section
 """
 		}
-		if proto == "Pre-Eclampsia" {
+		if definition == "Pre-Eclampsia" {
 			protocolDescription.text = """
 Only applicable for pregnant patients who are > 20 weeks gestation or those within 6 weeks postpartum
 			
@@ -1199,7 +1199,7 @@ Patient must have systolic BP > 160 mmHg or diastolic BP > 110 mmHg and any of t
 
 """
 		}
-		if proto == "General Rules for Pediatric Patients" {
+		if definition == "General Rules for Pediatric Patients" {
 			protocolDescription.text = """
 The phrase “CONTACT MEDICAL CONTROL” means to contact Vanderbilt Children’s Hospital Medical Control physician for any consultation or orders.
 
@@ -1224,7 +1224,7 @@ The phrase “CONTACT MEDICAL CONTROL” means to contact Vanderbilt Children’
 
 """
 		}
-		if proto == "Pediatric Allergic Reactions/Anaphalaxis" {
+		if definition == "Pediatric Allergic Reactions/Anaphalaxis" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%
 If patient is wheezing, hypotensive, or in respiratory distress:
@@ -1236,7 +1236,7 @@ If patient is wheezing, hypotensive, or in respiratory distress:
 
 """
 		}
-		if proto == "Pediatric Altered Mental Status (AMS), Syncope/Near Syncope" {
+		if definition == "Pediatric Altered Mental Status (AMS), Syncope/Near Syncope" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%
 -> Determine patient’s serum glucose
@@ -1255,7 +1255,7 @@ If patient is wheezing, hypotensive, or in respiratory distress:
 
 """
 		}
-		if proto == "Pediatric Asthma/Bronchospasm" {
+		if definition == "Pediatric Asthma/Bronchospasm" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%
 -> DuoNeb by continuous inhalation
@@ -1271,7 +1271,7 @@ For patients who do not begin to significantly improve after Duoneb and Epinephr
 			
 """
 		}
-		if proto == "Pediatric Bradycardia" {
+		if definition == "Pediatric Bradycardia" {
 			protocolDescription.text = """
 Patients must have one or more of the following:
 	► Hypotension
@@ -1288,7 +1288,7 @@ Bradycardia in children is generally due to hypoxia. Airway, ventilation, and ox
 
 """
 		}
-		if proto == "Pediatric Burns" {
+		if definition == "Pediatric Burns" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%
 -> Remove jewelry from the affected area
@@ -1319,7 +1319,7 @@ Drops/min = -------------------
 			
 """
 		}
-		if proto == "Pediatric Cardiac Arrest, Asystole & EMD/PEA" {
+		if definition == "Pediatric Cardiac Arrest, Asystole & EMD/PEA" {
 			protocolDescription.text = """
 -> Begin chest compressions at a rate of 100-120/minute
 -> Ventilate and oxygenate at 8-10 breaths per minute via BVM or ETT, use ETCO2
@@ -1340,7 +1340,7 @@ EMD/PEA
 			
 """
 		}
-		if proto == "Pediatric Croup" {
+		if definition == "Pediatric Croup" {
 			protocolDescription.text = """
 Patient may present with one or more of the following:
 	► barking cough
@@ -1357,7 +1357,7 @@ If patient has severe respiratory distress and/or not improving after 3-5 minute
 
 """
 		}
-		if proto == "Pediatric Cyanide Exposure" {
+		if definition == "Pediatric Cyanide Exposure" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula, non-rebreather, BVM, KING, or ETT, to maintain oxygen saturation of 100%
 -> Determine serum glucose
@@ -1389,7 +1389,7 @@ Due to its dark red color, hydroxocobalamin changes the pigmentation of the bloo
 			
 """
 		}
-		if proto == "Pediatric Hypoglycemia" {
+		if definition == "Pediatric Hypoglycemia" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%
 -> Determine serum glucose. If less than 60 mg/dl:
@@ -1412,7 +1412,7 @@ D10W -> Waste 40 ml D50W from pre-filled syringe. Withdraw 40 ml NS from IV bag 
 
 """
 		}
-		if proto == "Pediatric Hypovelemic Shock" {
+		if definition == "Pediatric Hypovelemic Shock" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula, non-rebreather, or BVM to maintain oxygen saturation of 93-95%
 -> Immobilize patient if suspected spinal injury (Refer to Spinal Motion Restriction protocol)
@@ -1424,7 +1424,7 @@ D10W -> Waste 40 ml D50W from pre-filled syringe. Withdraw 40 ml NS from IV bag 
 
 """
 		}
-		if proto == "Pediatric Neonatal Resuscitation" {
+		if definition == "Pediatric Neonatal Resuscitation" {
 			protocolDescription.text = """
 -> Suction the infant’s airway using bulb syringe as soon as the head is delivered  Suction the mouth first and then the nose; note any evidence of meconium
 -> Dry the baby thoroughly with sterile towels found in OB kit
@@ -1442,7 +1442,7 @@ If no improvement in heart rate
 
 """
 		}
-		if proto == "Pediatric Overdose/Ingestion" {
+		if definition == "Pediatric Overdose/Ingestion" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula, non-rebreather, or BVM to maintain oxygen saturation of 93-95%
 -> Place on EKG monitor
@@ -1471,7 +1471,7 @@ QT prolongation > 500 ms
 			
 """
 		}
-		if proto == "Pediatric Seizures" {
+		if definition == "Pediatric Seizures" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%
 -> Determine serum glucose
@@ -1484,7 +1484,7 @@ If seizures lasting longer than 5 minutes or status epilepticus:
 
 """
 		}
-		if proto == "Pediatric Tachycardia" {
+		if definition == "Pediatric Tachycardia" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%
 -> Acquire and transmit 12 lead EKG
@@ -1502,7 +1502,7 @@ CONTACT MEDICAL CONTROL to discuss and administer if directed:
 			
 """
 		}
-		if proto == "Pediatric Trauma" {
+		if definition == "Pediatric Trauma" {
 			protocolDescription.text = """
 -> Provide oxygen via non-rebreather or BVM to maintain oxygen saturation of 93-95%
 -> Immobilize patient if suspected spinal injury (Refer to Spinal Motion Restriction protocol)
@@ -1519,7 +1519,7 @@ CONTACT MEDICAL CONTROL to discuss and administer if directed:
 
 """
 		}
-		if proto == "Pediatric Ventricular Fibrillation or Pulseless Ventricular Tachycardia" {
+		if definition == "Pediatric Ventricular Fibrillation or Pulseless Ventricular Tachycardia" {
 			protocolDescription.text = """
 -> Begin chest compressions at a rate of 100-120/minute
 	-> Limit interruptions in chest compressions to less than 10 seconds
@@ -1536,7 +1536,7 @@ CONTACT MEDICAL CONTROL to discuss and administer if directed:
 
 """
 		}
-		if proto == "Pediatric Drowning" {
+		if definition == "Pediatric Drowning" {
 			protocolDescription.text = """
 -> Provide oxygen via nasal cannula or non-rebreather to maintain oxygen saturation of 93-95%
 -> IF cardiac arrest, begin with 5 rescue breaths then begin chest compressions
